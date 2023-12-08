@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.purple-bg {
+  background-color: #06041f;
+}
+
+.date-navigation {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.nav-button {
+  background-color: #f4f4f4;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #e4e4e4;
+}
+
+.current-week {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+
+.dot {
+  color: white;
+}
+
+
+
+.extra-small-text {
+  font-size: 0.8rem;
+}
+
+
+
+
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+ 
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  max-width: 200px;
+  border-left: 4px solid green;
+  color: green;
+  z-index: 1;
+ 
+}
+
+.event-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.event-title {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.event-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;  
+}
+
+.event-time {
+  font-size: 0.85rem;
+  color: green;
+}
+
+
+
+.booked-slot-heading {
+  color: green;
+  font-weight: bold;
+  margin-top: 0; 
+  margin-bottom: 0.5rem; 
+}
+
